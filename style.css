@@ -1,0 +1,122 @@
+/* Selector Universal */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector de ID */
+
+#valor-id {
+    border: 1px solid black;
+}
+
+/* Selector de Clase */
+
+.class-name {
+    color: blue;
+}
+
+/* Selector Descendiente */
+.container * {
+    width: 100%;
+}
+
+#header .logo {
+    color: red;
+}
+
+/* Selector de Etiqueta o Elemento */
+img {
+    border-radius: 10px;
+}
+
+#header .logo img {
+    border-radius: 100%;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+h1 {
+
+}
+
+/* Selector Adyacente */
+header + div {
+    border: 1px solid red;
+}
+
+
+/* Selector Hijo */
+#header > p {
+    color: violet;
+}
+
+/* Selector Hermano */
+
+.container div ~ p {
+    border: 1px solid green;
+}
+
+h3 ~ li {
+    color: gray;
+}
+
+h3 ~ ul {
+    margin: 0 10px;
+}
+
+ul h3 {
+    color: brown;
+}
+
+/* Selector de Atributo */
+
+a[href]{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: cadetblue;
+    margin: 10px 10px;
+}
+
+a[class] { /* que este definido el atributo */
+    color: red;
+}
+
+a[class=google]{ /* que tenga el valor */
+    color: red;
+}
+
+a[class=facebook]{
+    color: blue;
+}
+
+a[class=twitter]{
+    color: lightblue;
+}
+
+
+a[class=instagram]{
+    color: violet;
+}
+
+a[class~=google]{ /* que contenga el valor */
+    color: red;
+}
+
+a[href^=https]{ /* que comience con el valor */
+    color: red;
+}
+
+img[src$=".png"]{ /* que comience con el valor */
+    border: 10px solid black;
+}
+
