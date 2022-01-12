@@ -1,7 +1,7 @@
 input[type=checkbox] {
     width: 100px;
     height: 100px;
-/*     -moz-appearance:none;
+    /* -moz-appearance:none;
     -webkit-appearance:none;
     -o-appearance:none; */
 }
