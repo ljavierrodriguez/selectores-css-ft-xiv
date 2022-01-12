@@ -1,0 +1,15 @@
+input[type=checkbox] {
+    width: 100px;
+    height: 100px;
+/*     -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none; */
+}
+
+[type=checkbox]:checked {
+    width: 150px;
+    height: 150px;
+    outline: 3px solid #1e5180;
+    background-color: greenyellow;
+    box-shadow: 5px 5px 5px blue;
+}

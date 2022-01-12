@@ -108,6 +108,10 @@ a[class=instagram]{
     color: violet;
 }
 
+a[class*=oog]{ /* que contenga parte del valor */
+    color: red;
+}
+
 a[class~=google]{ /* que contenga el valor */
     color: red;
 }
@@ -120,3 +124,78 @@ img[src$=".png"]{ /* que comience con el valor */
     border: 10px solid black;
 }
 
+a:hover {
+    color: gray;
+}
+
+input[type=checkbox]:checked {
+    border: 1px solid black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box::after {
+    content: "Hola";
+    color: blue;
+    display: block;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+
+.box::before {
+    content: "hola";
+    display: block;
+    text-align: center;
+}
+
+p::first-letter {
+    float: left;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: cursive;
+    padding-right: 4px;
+}
+
+p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.links {
+    background-color: grey;
+}
+
+.links a {
+    display: inline-block;
+}
+
+.links a:last-child {
+    color: blue;
+    float: right;
+    padding-right: 5px;
+}
+
+.links a:nth-child(1) {
+    color: red;
+    float: right;
+    padding-right: 5px;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    font-style: italic;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: grey;
+    font-style: italic;
+    font-size: 20px;
+}
